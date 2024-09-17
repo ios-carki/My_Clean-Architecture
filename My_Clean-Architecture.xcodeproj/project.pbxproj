@@ -14,6 +14,8 @@
 		C3435CDD2C9A05790052728F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C3435CDC2C9A05790052728F /* Alamofire */; };
 		C3435CE02C9A05850052728F /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = C3435CDF2C9A05850052728F /* Factory */; };
 		C3435CE22C9A05910052728F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C3435CE12C9A05910052728F /* .gitignore */; };
+		C3435CE92C9A06790052728F /* Domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3435CE82C9A06790052728F /* Domain.swift */; };
+		C3435CEB2C9A067E0052728F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3435CEA2C9A067E0052728F /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		C3435CD12C9A05240052728F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3435CD42C9A05240052728F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C3435CE12C9A05910052728F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		C3435CE82C9A06790052728F /* Domain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain.swift; sourceTree = "<group>"; };
+		C3435CEA2C9A067E0052728F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 		C3435CC12C9A05220052728F = {
 			isa = PBXGroup;
 			children = (
+				C3435CE12C9A05910052728F /* .gitignore */,
 				C3435CCC2C9A05220052728F /* My_Clean-Architecture */,
 				C3435CCB2C9A05220052728F /* Products */,
 			);
@@ -58,10 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				C3435CCD2C9A05220052728F /* My_Clean_ArchitectureApp.swift */,
-				C3435CCF2C9A05220052728F /* ContentView.swift */,
-				C3435CD12C9A05240052728F /* Assets.xcassets */,
+				C3435CE62C9A06340052728F /* Application */,
+				C3435CE52C9A062E0052728F /* Presentation */,
+				C3435CE42C9A06280052728F /* Domain */,
+				C3435CE32C9A06240052728F /* Data */,
 				C3435CD32C9A05240052728F /* Preview Content */,
-				C3435CE12C9A05910052728F /* .gitignore */,
 			);
 			path = "My_Clean-Architecture";
 			sourceTree = "<group>";
@@ -72,6 +78,46 @@
 				C3435CD42C9A05240052728F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C3435CE32C9A06240052728F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C3435CEA2C9A067E0052728F /* Data.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C3435CE42C9A06280052728F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C3435CE82C9A06790052728F /* Domain.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C3435CE52C9A062E0052728F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C3435CCF2C9A05220052728F /* ContentView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		C3435CE62C9A06340052728F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C3435CE72C9A063E0052728F /* Resources */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C3435CE72C9A063E0052728F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C3435CD12C9A05240052728F /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +201,8 @@
 			files = (
 				C3435CD02C9A05220052728F /* ContentView.swift in Sources */,
 				C3435CCE2C9A05220052728F /* My_Clean_ArchitectureApp.swift in Sources */,
+				C3435CE92C9A06790052728F /* Domain.swift in Sources */,
+				C3435CEB2C9A067E0052728F /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
