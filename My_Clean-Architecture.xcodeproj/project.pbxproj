@@ -15,10 +15,21 @@
 		C3435CE02C9A05850052728F /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = C3435CDF2C9A05850052728F /* Factory */; };
 		C3435CE22C9A05910052728F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C3435CE12C9A05910052728F /* .gitignore */; };
 		C3435CE92C9A06790052728F /* Domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3435CE82C9A06790052728F /* Domain.swift */; };
-		C3435CEB2C9A067E0052728F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3435CEA2C9A067E0052728F /* Data.swift */; };
-		C3435CEE2C9A079C0052728F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3435CED2C9A079C0052728F /* NetworkService.swift */; };
+		C3435CEE2C9A079C0052728F /* BaseNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3435CED2C9A079C0052728F /* BaseNetworkService.swift */; };
 		C3435CF02C9A07DC0052728F /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3435CEF2C9A07DC0052728F /* APIError.swift */; };
 		C3435CF22C9A084C0052728F /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3435CF12C9A084C0052728F /* EndPoint.swift */; };
+		C3435CF62C9AF10C0052728F /* DogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3435CF52C9AF10C0052728F /* DogAPI.swift */; };
+		C3435CF92C9AF1810052728F /* DogResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3435CF82C9AF1810052728F /* DogResponseDTO.swift */; };
+		C3435CFB2C9AF1D60052728F /* NetworkResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3435CFA2C9AF1D60052728F /* NetworkResponseError.swift */; };
+		C3435CFE2C9AF22F0052728F /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3435CFD2C9AF22F0052728F /* NetworkError.swift */; };
+		C3435D012C9AF3110052728F /* RandomDogNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3435D002C9AF3110052728F /* RandomDogNetworkService.swift */; };
+		C3435D052C9AF4490052728F /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3435D042C9AF4490052728F /* ErrorResponse.swift */; };
+		C3435D072C9AF57C0052728F /* RandomDogEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3435D062C9AF57C0052728F /* RandomDogEndpoint.swift */; };
+		C3435D0A2C9AF6390052728F /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3435D092C9AF6390052728F /* ContentViewModel.swift */; };
+		C3435D0D2C9AF6880052728F /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3435D0C2C9AF6880052728F /* DIContainer.swift */; };
+		C3435D112C9AF7450052728F /* RandomDogRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3435D102C9AF7450052728F /* RandomDogRepository.swift */; };
+		C3435D142C9AF8260052728F /* RealRandomDogRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3435D132C9AF8260052728F /* RealRandomDogRepository.swift */; };
+		C3435D172C9AF9C80052728F /* GetRandomDogImageUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3435D162C9AF9C80052728F /* GetRandomDogImageUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,10 +40,21 @@
 		C3435CD42C9A05240052728F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C3435CE12C9A05910052728F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		C3435CE82C9A06790052728F /* Domain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain.swift; sourceTree = "<group>"; };
-		C3435CEA2C9A067E0052728F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		C3435CED2C9A079C0052728F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		C3435CED2C9A079C0052728F /* BaseNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkService.swift; sourceTree = "<group>"; };
 		C3435CEF2C9A07DC0052728F /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		C3435CF12C9A084C0052728F /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		C3435CF52C9AF10C0052728F /* DogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogAPI.swift; sourceTree = "<group>"; };
+		C3435CF82C9AF1810052728F /* DogResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogResponseDTO.swift; sourceTree = "<group>"; };
+		C3435CFA2C9AF1D60052728F /* NetworkResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponseError.swift; sourceTree = "<group>"; };
+		C3435CFD2C9AF22F0052728F /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		C3435D002C9AF3110052728F /* RandomDogNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDogNetworkService.swift; sourceTree = "<group>"; };
+		C3435D042C9AF4490052728F /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		C3435D062C9AF57C0052728F /* RandomDogEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDogEndpoint.swift; sourceTree = "<group>"; };
+		C3435D092C9AF6390052728F /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		C3435D0C2C9AF6880052728F /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		C3435D102C9AF7450052728F /* RandomDogRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDogRepository.swift; sourceTree = "<group>"; };
+		C3435D132C9AF8260052728F /* RealRandomDogRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealRandomDogRepository.swift; sourceTree = "<group>"; };
+		C3435D162C9AF9C80052728F /* GetRandomDogImageUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRandomDogImageUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				C3435CEC2C9A07900052728F /* Network */,
-				C3435CEA2C9A067E0052728F /* Data.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -98,6 +119,9 @@
 		C3435CE42C9A06280052728F /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				C3435D152C9AF9B70052728F /* UseCase */,
+				C3435D0E2C9AF72C0052728F /* Repository */,
+				C3435CFC2C9AF2210052728F /* Entities */,
 				C3435CE82C9A06790052728F /* Domain.swift */,
 			);
 			path = Domain;
@@ -107,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				C3435CCF2C9A05220052728F /* ContentView.swift */,
+				C3435D092C9AF6390052728F /* ContentViewModel.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -114,6 +139,7 @@
 		C3435CE62C9A06340052728F /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				C3435D0B2C9AF66B0052728F /* Injected */,
 				C3435CE72C9A063E0052728F /* Resources */,
 			);
 			path = Application;
@@ -130,11 +156,106 @@
 		C3435CEC2C9A07900052728F /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				C3435CED2C9A079C0052728F /* NetworkService.swift */,
+				C3435D122C9AF81C0052728F /* Repository */,
+				C3435D082C9AF59C0052728F /* Common */,
+				C3435D022C9AF4350052728F /* Response */,
+				C3435CFF2C9AF2F80052728F /* RandomDog */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C3435CF72C9AF1640052728F /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				C3435CF82C9AF1810052728F /* DogResponseDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		C3435CFC2C9AF2210052728F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C3435CFD2C9AF22F0052728F /* NetworkError.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C3435CFF2C9AF2F80052728F /* RandomDog */ = {
+			isa = PBXGroup;
+			children = (
+				C3435CF52C9AF10C0052728F /* DogAPI.swift */,
+				C3435CFA2C9AF1D60052728F /* NetworkResponseError.swift */,
+				C3435D002C9AF3110052728F /* RandomDogNetworkService.swift */,
+				C3435D062C9AF57C0052728F /* RandomDogEndpoint.swift */,
+			);
+			path = RandomDog;
+			sourceTree = "<group>";
+		};
+		C3435D022C9AF4350052728F /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				C3435CF72C9AF1640052728F /* DTO */,
+				C3435D032C9AF43B0052728F /* Error */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		C3435D032C9AF43B0052728F /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				C3435D042C9AF4490052728F /* ErrorResponse.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		C3435D082C9AF59C0052728F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C3435CED2C9A079C0052728F /* BaseNetworkService.swift */,
 				C3435CEF2C9A07DC0052728F /* APIError.swift */,
 				C3435CF12C9A084C0052728F /* EndPoint.swift */,
 			);
-			path = Network;
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C3435D0B2C9AF66B0052728F /* Injected */ = {
+			isa = PBXGroup;
+			children = (
+				C3435D0C2C9AF6880052728F /* DIContainer.swift */,
+			);
+			path = Injected;
+			sourceTree = "<group>";
+		};
+		C3435D0E2C9AF72C0052728F /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				C3435D0F2C9AF7370052728F /* RandomDog */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		C3435D0F2C9AF7370052728F /* RandomDog */ = {
+			isa = PBXGroup;
+			children = (
+				C3435D102C9AF7450052728F /* RandomDogRepository.swift */,
+			);
+			path = RandomDog;
+			sourceTree = "<group>";
+		};
+		C3435D122C9AF81C0052728F /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				C3435D132C9AF8260052728F /* RealRandomDogRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		C3435D152C9AF9B70052728F /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				C3435D162C9AF9C80052728F /* GetRandomDogImageUseCase.swift */,
+			);
+			path = UseCase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,13 +337,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3435CEE2C9A079C0052728F /* NetworkService.swift in Sources */,
+				C3435CF92C9AF1810052728F /* DogResponseDTO.swift in Sources */,
+				C3435CEE2C9A079C0052728F /* BaseNetworkService.swift in Sources */,
+				C3435D072C9AF57C0052728F /* RandomDogEndpoint.swift in Sources */,
 				C3435CD02C9A05220052728F /* ContentView.swift in Sources */,
 				C3435CCE2C9A05220052728F /* My_Clean_ArchitectureApp.swift in Sources */,
+				C3435CF62C9AF10C0052728F /* DogAPI.swift in Sources */,
 				C3435CE92C9A06790052728F /* Domain.swift in Sources */,
-				C3435CEB2C9A067E0052728F /* Data.swift in Sources */,
+				C3435D0D2C9AF6880052728F /* DIContainer.swift in Sources */,
+				C3435CFB2C9AF1D60052728F /* NetworkResponseError.swift in Sources */,
 				C3435CF22C9A084C0052728F /* EndPoint.swift in Sources */,
+				C3435CFE2C9AF22F0052728F /* NetworkError.swift in Sources */,
+				C3435D0A2C9AF6390052728F /* ContentViewModel.swift in Sources */,
+				C3435D172C9AF9C80052728F /* GetRandomDogImageUseCase.swift in Sources */,
+				C3435D012C9AF3110052728F /* RandomDogNetworkService.swift in Sources */,
 				C3435CF02C9A07DC0052728F /* APIError.swift in Sources */,
+				C3435D052C9AF4490052728F /* ErrorResponse.swift in Sources */,
+				C3435D142C9AF8260052728F /* RealRandomDogRepository.swift in Sources */,
+				C3435D112C9AF7450052728F /* RandomDogRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

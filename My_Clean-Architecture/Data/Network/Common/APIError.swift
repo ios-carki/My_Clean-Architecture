@@ -10,4 +10,5 @@ import Foundation
 enum APIError: Error {
     case defaultError
     case Unknown
+    case customError(data: Data)
 }
