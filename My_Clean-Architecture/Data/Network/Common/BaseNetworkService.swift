@@ -1,5 +1,5 @@
 //
-//  NetworkService.swift
+//  BaseNetworkService.swift
 //  My_Clean-Architecture
 //
 //  Created by Carki on 9/18/24.
@@ -9,7 +9,7 @@ import Foundation
 
 import Alamofire
 
-class NetworkService {
+class BaseNetworkService {
     let session: Session = {
         let configuration = URLSessionConfiguration.af.default
         configuration.timeoutIntervalForRequest = 5 * 60
@@ -21,11 +21,11 @@ class NetworkService {
     }()
 }
 
-extension NetworkService {
+extension BaseNetworkService {
     func request<T>(
         _ host: String,
         url: String,
-        auth: Bool,
+        auth: Bool? = nil,
         method: HTTPMethod,
         headers requestHeaders: [String: String]? = nil,
         parameters: Parameters? = nil,
