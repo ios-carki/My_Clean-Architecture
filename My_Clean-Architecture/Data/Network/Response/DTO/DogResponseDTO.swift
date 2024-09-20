@@ -14,6 +14,7 @@ struct DogResponseDTO: Codable {
 
 extension DogResponseDTO {
     func toDog() -> Dog {
-        Dog(stringURL: self.url)
+        Dog(imageURL: self.url)
     }
 }
+

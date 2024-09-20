@@ -8,5 +8,5 @@
 import Foundation
 
 struct Dog: Codable {
-    let stringURL: String
+    let imageURL: String
 }

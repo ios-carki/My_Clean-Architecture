@@ -20,7 +20,7 @@ final class ContentViewModel: ObservableObject {
         switch result {
         case .success(let response):
             DispatchQueue.main.async {
-                self.imageURL = response.stringURL
+                self.imageURL = response.imageURL
             }
             
         case .failure(let error):
