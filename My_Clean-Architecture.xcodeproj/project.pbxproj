@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A1A7E732C9D10C0001911FC /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A7E722C9D10C0001911FC /* Dog.swift */; };
 		C3435CCE2C9A05220052728F /* My_Clean_ArchitectureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3435CCD2C9A05220052728F /* My_Clean_ArchitectureApp.swift */; };
 		C3435CD02C9A05220052728F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3435CCF2C9A05220052728F /* ContentView.swift */; };
 		C3435CD22C9A05240052728F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3435CD12C9A05240052728F /* Assets.xcassets */; };
@@ -14,7 +15,6 @@
 		C3435CDD2C9A05790052728F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C3435CDC2C9A05790052728F /* Alamofire */; };
 		C3435CE02C9A05850052728F /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = C3435CDF2C9A05850052728F /* Factory */; };
 		C3435CE22C9A05910052728F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C3435CE12C9A05910052728F /* .gitignore */; };
-		C3435CE92C9A06790052728F /* Domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3435CE82C9A06790052728F /* Domain.swift */; };
 		C3435CEE2C9A079C0052728F /* BaseNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3435CED2C9A079C0052728F /* BaseNetworkService.swift */; };
 		C3435CF02C9A07DC0052728F /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3435CEF2C9A07DC0052728F /* APIError.swift */; };
 		C3435CF22C9A084C0052728F /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3435CF12C9A084C0052728F /* EndPoint.swift */; };
@@ -33,13 +33,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A1A7E722C9D10C0001911FC /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		C3435CCA2C9A05220052728F /* My_Clean-Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My_Clean-Architecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3435CCD2C9A05220052728F /* My_Clean_ArchitectureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Clean_ArchitectureApp.swift; sourceTree = "<group>"; };
 		C3435CCF2C9A05220052728F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C3435CD12C9A05240052728F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3435CD42C9A05240052728F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C3435CE12C9A05910052728F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		C3435CE82C9A06790052728F /* Domain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain.swift; sourceTree = "<group>"; };
 		C3435CED2C9A079C0052728F /* BaseNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkService.swift; sourceTree = "<group>"; };
 		C3435CEF2C9A07DC0052728F /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		C3435CF12C9A084C0052728F /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
@@ -122,7 +122,6 @@
 				C3435D152C9AF9B70052728F /* UseCase */,
 				C3435D0E2C9AF72C0052728F /* Repository */,
 				C3435CFC2C9AF2210052728F /* Entities */,
-				C3435CE82C9A06790052728F /* Domain.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -176,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				C3435CFD2C9AF22F0052728F /* NetworkError.swift */,
+				5A1A7E722C9D10C0001911FC /* Dog.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -343,7 +343,6 @@
 				C3435CD02C9A05220052728F /* ContentView.swift in Sources */,
 				C3435CCE2C9A05220052728F /* My_Clean_ArchitectureApp.swift in Sources */,
 				C3435CF62C9AF10C0052728F /* DogAPI.swift in Sources */,
-				C3435CE92C9A06790052728F /* Domain.swift in Sources */,
 				C3435D0D2C9AF6880052728F /* DIContainer.swift in Sources */,
 				C3435CFB2C9AF1D60052728F /* NetworkResponseError.swift in Sources */,
 				C3435CF22C9A084C0052728F /* EndPoint.swift in Sources */,
@@ -352,6 +351,7 @@
 				C3435D172C9AF9C80052728F /* GetRandomDogImageUseCase.swift in Sources */,
 				C3435D012C9AF3110052728F /* RandomDogNetworkService.swift in Sources */,
 				C3435CF02C9A07DC0052728F /* APIError.swift in Sources */,
+				5A1A7E732C9D10C0001911FC /* Dog.swift in Sources */,
 				C3435D052C9AF4490052728F /* ErrorResponse.swift in Sources */,
 				C3435D142C9AF8260052728F /* RealRandomDogRepository.swift in Sources */,
 				C3435D112C9AF7450052728F /* RandomDogRepository.swift in Sources */,

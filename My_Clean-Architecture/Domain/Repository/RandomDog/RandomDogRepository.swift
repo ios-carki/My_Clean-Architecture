@@ -8,5 +8,5 @@
 import Foundation
 
 protocol RandomDogRepository {
-    func getRandomImage() async -> Result<DogResponseDTO, NetworkResponseError>
+    func getRandomImage() async -> Result<Dog, NetworkResponseError>
 }

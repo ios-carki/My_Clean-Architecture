@@ -11,3 +11,9 @@ struct DogResponseDTO: Codable {
     let fileSizeBytes: Int
     let url: String
 }
+
+extension DogResponseDTO {
+    func toDog() -> Dog {
+        Dog(stringURL: self.url)
+    }
+}

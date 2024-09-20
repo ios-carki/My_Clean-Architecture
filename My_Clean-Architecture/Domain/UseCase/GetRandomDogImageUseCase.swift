@@ -14,7 +14,7 @@ final class GetRandomDogImageUseCase {
         self.repository = repository
     }
     
-    func execute() async -> Result<DogResponseDTO, NetworkError> {
+    func execute() async -> Result<Dog, NetworkError> {
         await self.repository.getRandomImage().mapError{ $0.toNetworkError() }
     }
 }

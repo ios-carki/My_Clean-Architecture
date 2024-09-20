@@ -14,7 +14,7 @@ class RealRandomDogRepository: RandomDogRepository {
         self.api = api
     }
     
-    func getRandomImage() async -> Result<DogResponseDTO, NetworkResponseError> {
-        await api.getRandomDogImage()
+    func getRandomImage() async -> Result<Dog, NetworkResponseError> {
+        await api.getRandomDogImage().map{ $0.toDog() }
     }
 }
